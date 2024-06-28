@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "tnt-notify",
+	"version": "${version}",
+	"name": "TNT Notify",
+	"description": "TNT Notify mod for borukva",
+	"authors": [
+		"opryshok"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/tnt-notify/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.opryshok.TNTNotify"
+		],
+		"fabric-datagen": [
+			"com.opryshok.TNTNotifyDataGenerator"
+		]
+	},
+	"mixins": [
+		"tnt-notify.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
